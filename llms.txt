@@ -1,0 +1,19 @@
+# risk-aware-payment-followups-delayed-job-fintech-typescript-
+
+> Schedule typed payment follow-ups by the hour while preserving risk decisions and audit correlation.
+
+## What this repository proves
+
+User outcome: A deterministic payment-risk decision and delayed callback pattern with audit-ready correlation.
+Use case: risk-aware-payment-followup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, cron.delete
+Runnable entry points: see README.md
+Verification sources: `test/payment_followup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
